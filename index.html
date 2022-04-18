@@ -56,7 +56,7 @@
                     <div class="backdrop-form">
                         <!-- ФОРМА заполнения -->
                         <button class="backdrop-btn" type="button"  data-modal-close>
-                            <svg class="backdrop-icon" width="30" height="30">
+                            <svg class="backdrop-icon" width="18" height="18">
                              <use href="./images/icons.svg#close-black"></use>
                             </svg>
                            </button>
@@ -66,9 +66,9 @@
                                 <span class="form-label">Имя</span>
                                 <span class="form-location">
                                     <input class="form-input" 
-                                    name="name"
+                                    name="text"
                                     placeholder=" "
-                                    type="name">
+                                    type="text">
                                     <svg class="form-icon" width="18" height="18">
                                         <use href="./images/icons.svg#person">
                                         </use>
@@ -79,9 +79,9 @@
                                 <span class="form-label">Телефон</span>
                                 <span class="form-location">
                                     <input class="form-input" 
-                                    name="telephone"
+                                    name="tel"
                                     placeholder=" "
-                                    type="telephone">
+                                    type="tel">
                                     <svg class="form-icon" width="18" height="18">
                                         <use href="./images/icons.svg#phone1">
                                         </use>
@@ -92,9 +92,9 @@
                                 <span class="form-label">Почта</span>
                                 <span class="form-location">
                                     <input class="form-input" 
-                                    name="mail"
+                                    name="email"
                                     placeholder=" "
-                                    type="mail">
+                                    type="email">
                                     <svg class="form-icon" width="18" height="18">
                                         <use href="./images/icons.svg#mail">
                                         </use>
@@ -105,22 +105,21 @@
                                 <span class="hero-comment-form-label form-label">Комментарий</span>
                                 <textarea class="hero-form-comment hero-form-input" name="comment" rows="10" placeholder="Введите текст"></textarea>
                             </label>
-                            <label class="form-field">
+                            <label class="form-field-set">
+                                <input class="hero-form-checkbox form-input" type="checkbox" name="policy">
+                                 <svg class="icon-check" width="16" height="15">
+                                  <use href="./imges/icon.svg#icon-check"></use>
+                              </svg>
                                 <span class="hero-policy-form-label form-label">Соглашаюсь с рассылкой и принимаю 
                                   <a class="hero-form-link" href="">Условия договора</a>
                                 </span>
-                                <input class="hero-form-checkbox form-input" type="checkbox" name="policy">
-                                  
-                                   <svg class="icon-check" width="16" height="15">
-                                     <use href="./imges/icon.svg#icon-check"></use>
-                                 </svg>
+                               
                              </label>
                               <button class="btn-submision" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
         </section>
-
 
         
         <!-- cекция 2 список-->
@@ -177,8 +176,6 @@
         <section class="structure-companies">
             <div class="container-second">
             <h2 class="description">Чем мы занимаемся</h2>
-            
-     
             <ul class="flex-element">
                 <li class="item">
                     <div class="thumbers">
@@ -206,7 +203,7 @@
                 </div>
                 </li>
             </ul>
-        
+       </div>
         </section>
     <!--cекция 4 -->
  
@@ -495,7 +492,7 @@
           <h3 class="footer-adds">Подпишитесь на рассылку</h3>
           <div class="subscribe-wrapper">
             <label class="subscribe-form-field">
-              <input class="subscribe-form-input" placeholder="E-mail" type="email" name="mail">
+              <input class="subscribe-form-input" placeholder="E-mail" type="email" name="email">
               <span class="subscribe-form-label" hidden>Почта</span>
           </label>
           

@@ -7,7 +7,7 @@
     --accent-bgc-hero:#2F303A;
     --accent-bgc-fonescreen:#C4C4C4;
     --accent-bgc-folio:#F5F4FA;
-    --accent-border:#EEEEEE;
+    --accent-border-color:#EEEEEE;
     --border-line:#ECECEC;
     --accent-color-networks:#AFB1B8;
     /* border 30 px between cards */
@@ -207,9 +207,7 @@
         line-height: 1.1;
         letter-spacing: 0.02em;
         font-style: normal;
-        
         display:block;
-        box-shadow: 250ms var(--timing-function);
       }
      
     
@@ -230,7 +228,7 @@
     
       /* section hero */
     .hero {
-      border: 1 solid var(--accent-border);
+      border: 1px solid var(--accent-border-color);
       background-color: var(--accent-bgc-fonescreen);
       text-align:center;
       padding-top: 200px;
@@ -240,8 +238,7 @@
       url(../images/fonescreen.jpg); 
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 1600px 600px;
-      
+      background-size: 1600px 600px; 
     }
     
       .main-header{
@@ -327,6 +324,8 @@ transition: transform 250ms var(--timing-function);
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   border: 0;
   padding: 0;
   background-color: var(--accent-color-second);
@@ -341,7 +340,6 @@ align-items: center;
 justify-content: center;
 border-radius: 50%;
 }
-
 
 
 /* Заголовок формы */
@@ -381,6 +379,7 @@ border-radius: 50%;
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   
 }
 
@@ -390,15 +389,15 @@ border-radius: 50%;
   letter-spacing: 0.01em;
   color: var(--primare-text-color);
   margin-right: 90%;
-  
-
+ 
 }
 
 .form-location {
   position: relative;
   margin-top: 4px;
-  margin-bottom: 10px;
+  
 }
+
 
 .form-input {
   width: 100%;
@@ -435,7 +434,6 @@ border-radius: 50%;
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms var(--timing-function);
-    margin-bottom:20px;
   }
 
 
@@ -450,25 +448,24 @@ border-radius: 50%;
 
 .form-input:hover ~ .form-icon,
 .form-input:focus ~ .form-icon  {
-    fill: var(--accent-color);
+ fill: var(--accent-color);
 }
 
 .backdrop-icon:hover,
 .backdrop-icon:focus {
-  fill: var(--accent-color);
+ fill: var(--accent-color);
 }
 
 
 .form-input:hover,
 .form-input:focus,
 .hero-form-input:checked {
-    border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .hero-form-comment {
   height: 117px;
   margin-top: 4px;
-  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -521,13 +518,24 @@ border-radius: 50%;
   fill: var(--accent-color-second);
 }
 
+  .icon-check :focus {
+    border-color: var(--accent-color-second);
+  }
+
 .hero-form-checkbox:checked ~ .icon-check {
   fill: var(--accent-color-second);
-  border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-origin: border-box; 
   background-size: contain;
 }
+
+.form-field-set{
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-submision {
   position: relative;
   display: inline-block;
@@ -539,12 +547,10 @@ border-radius: 50%;
   background: var(--accent-color);
   box-shadow: var(--shadow-area-portfolio-card);
   font-size: 16px;
-  letter-spacing: 6%;
   line-height: 1.8;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
 }
 
     /* cекция 2 */
@@ -873,7 +879,6 @@ padding: 0px;
     
    .separation{
   display: flex;
-  align-items: base;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -926,15 +931,16 @@ padding: 0px;
  
   .subscribe {
     margin-left: 93px;
+    align-items: center;
+    display: flex;
 }
 
 
 
 .subscribe-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
     margin-top: 20px;
+    
 }
 
 
@@ -942,9 +948,7 @@ padding: 0px;
     width: 358px;
     height: 50px;
     padding-left: 16px;
-
     color: rgba(255, 255, 255, 0.6);
-    
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1040,7 +1044,7 @@ display: flex;
     .cards-icons:hover,
     .cards-icons:focus{
   
-    box-shadow:var(--shadow-area-portfolio-card);
+    box-shadow:var(--shadow-area-portfolio-card),
     overlay 250ms var(--timing-function);
     }
 
