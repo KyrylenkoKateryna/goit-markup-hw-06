@@ -451,8 +451,8 @@ border-radius: 50%;
  fill: var(--accent-color);
 }
 
-.backdrop-icon:hover,
-.backdrop-icon:focus {
+.backdrop-btn:hover,
+.backdrop-btn:focus {
  fill: var(--accent-color);
 }
 
@@ -518,7 +518,8 @@ border-radius: 50%;
   fill: var(--accent-color-second);
 }
 
-  .icon-check :focus {
+  .icon-check:focus,
+  .icon-check:hover {
     border-color: var(--accent-color-second);
   }
 
