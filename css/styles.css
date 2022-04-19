@@ -519,7 +519,7 @@ border-radius: 50%;
 }
 
   .icon-check:focus,
-  .icon-check:hover {
+  {
     border-color: var(--accent-color-second);
   }
 
