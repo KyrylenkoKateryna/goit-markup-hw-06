@@ -518,7 +518,7 @@ border-radius: 50%;
   fill: var(--accent-color-second);
 }
 
-  .icon-check:focus,
+  .icon-check:focus
   {
     border-color: var(--accent-color-second);
   }
