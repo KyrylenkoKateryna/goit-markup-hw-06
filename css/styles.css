@@ -463,6 +463,11 @@ border-radius: 50%;
   border: 1px solid var(--accent-color);
 }
 
+.hero-form-input:hover,
+.hero-form-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .hero-form-comment {
   height: 117px;
   margin-top: 4px;
@@ -530,9 +535,10 @@ border-radius: 50%;
   background-size: contain;
 }
 
-.hero-form-checkbox:focus ~ .icon-check {
-  background-color: var(--accent-color);
+.hero-form-checkbox:focus ~ .icon-check{
+border-color: var(--accent-color);
 }
+
 .form-field-set{
   margin-bottom: 20px;
   position: relative;
