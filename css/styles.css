@@ -530,6 +530,9 @@ border-radius: 50%;
   background-size: contain;
 }
 
+.hero-form-checkbox:focus ~ .icon-check {
+  background-color: var(--accent-color);
+}
 .form-field-set{
   margin-bottom: 20px;
   position: relative;
